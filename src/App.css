@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+h1{
+  font-family: Lora;
+  font: 900;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffb13d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +26,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.logoImg{
+  display: flex;
+  margin-top: 0px;
 }
 
 .App-link {
