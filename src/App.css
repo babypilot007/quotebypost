@@ -68,13 +68,12 @@ h1{
   position: relative;
   border-radius: 10px;
   width: 70vw;
-  font : red
 
 }
 
 .formInput:focus{
   padding-top: 15px;
-  color: rgb(243, 22, 22);
+  color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   position: relative;
 
