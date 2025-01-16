@@ -12,21 +12,21 @@ function App() {
   const[Address, getAddress] = useState('')
   const[Email, getEmail] = useState('')
 
-  const[dets, getDets] = useState('Add me to the Mailing List')
-  const[detsDiv, getDetsDiv] = useState(false)
+  // const[dets, getDets] = useState('Add me to the Mailing List')
+  // const[detsDiv, getDetsDiv] = useState(false)
 
 
   const mail = async (event) =>{
 
 
     if(!firstName || !Address || !Email){
-        getDetsDiv(true)
+        // getDetsDiv(true)
 
-        getDets("Please enter valid Details")
+        // getDets("Please enter valid Details")
     }
 
     else {
-        getDets("Welcome to the club")
+        // getDets("Welcome to the club")
 
     try {
       const {data: {u}} = await supabase.from('details').insert([
@@ -71,7 +71,7 @@ function App() {
       <header className="App-header">
 
        <div className='logoImg'>
-         <img src={logo} alt='Logo'></img>
+            <img src={logo} alt='Logo'></img>
          </div>
 
 <div>
@@ -101,8 +101,8 @@ function App() {
         </div>
 
 
-         {detsDiv ? <div className='noInfo'>{dets}</div>:<div className='yesInfo'><p>{dets}</p>
-</div>}
+         {/* {detsDiv ? <div className='noInfo'>{dets}</div>:<div className='yesInfo'><p>{dets}</p>
+</div>} */}
         
         </form >
          </div>
