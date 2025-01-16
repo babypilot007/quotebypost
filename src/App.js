@@ -26,7 +26,7 @@ function App() {
     }
 
     else {
-        alert("Welcome to the club")
+        getDets("Welcome to the club")
 
     try {
       const {data: {u}} = await supabase.from('details').insert([
@@ -71,14 +71,14 @@ function App() {
       <header className="App-header">
 
        <div className='logoImg'>
-         <img src={logo} height='50px' width='150px' alt='Logo'></img>
+         <img src={logo} alt='Logo'></img>
          </div>
 
 <div>
 
          <form className='mail_form'>
           
-        <input className='formInput' type='text' placeholder='First Name'
+        <input className='formInput' type='text' placeholder='Name'
               value={firstName}
               onChange={(e) => getFirstName(e.target.value)}
                 required
@@ -90,7 +90,7 @@ function App() {
         value={Email}
          onChange={(e) => getEmail(e.target.value)} required></input>
 
-<input className='formInput' type='text' placeholder='Last Name'
+<input className='formInput' type='text' placeholder='Full Address'
         value={Address}
          onChange={(e) => getAddress(e.target.value)} 
         required></input>
